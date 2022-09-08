@@ -1,0 +1,16 @@
+// BREAKPOINTS
+$sm: 669px;
+$md: 899px;
+$lg: 1299px;
+
+$breakpoints: (
+	"sm": (
+		min-width: $sm,
+	),
+	"md": (
+		min-width: $md,
+	),
+	"lg": (
+		min-width: $lg,
+	),
+) !default;
