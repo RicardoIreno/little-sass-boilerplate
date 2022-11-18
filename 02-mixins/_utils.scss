@@ -1,0 +1,17 @@
+@mixin adjust-axis($a, $value) {
+	@if $a == "h" {
+		justify-content: $value;
+	}
+	@if $a == "v" {
+		align-items: $value;
+	}
+}
+
+@mixin transition($t: 0.4s) {
+	transition: all $t ease;
+}
+
+@mixin ico($ico) {
+	mask-image: $ico;
+	-webkit-mask-image: $ico;
+}

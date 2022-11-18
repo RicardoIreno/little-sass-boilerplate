@@ -1,17 +1,35 @@
-@import "abstracts/vars";
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "base/normalize";
-@import "base/theme";
-@import "base/utils";
-@import "base/divs";
-@import "base/typography";
-@import "base/sitefooter";
-@import "base/siteheader";
-@import "base/sitemenu";
-@import "base/svg";
-@import "components/c-btn";
-@import "components/c-tables";
-@import "pages/about";
-@import "pages/home";
-@import "test";
+/// === DON'T FORGET THE VARS! === ///
+@import "00-vars/vars";
+@import "00-vars/svg";
+
+/// === FUNCTIONS === ///
+@import "01-functions/functions";
+
+/// === MIXINS === ///
+@import "02-mixins/breakpoint";
+@import "02-mixins/grid-system";
+@import "02-mixins/theme-system";
+@import "02-mixins/utils";
+
+/// === UTILS === ///
+@import "03-utils/normalize";
+@import "03-utils/acessibility";
+@import "03-utils/divs";
+@import "03-utils/margin";
+@import "03-utils/others";
+
+/// === SITE === ///
+@import "04-site/theme";
+@import "04-site/typography";
+@import "04-site/icons";
+@import "04-site/acessibility";
+@import "04-site/header";
+@import "04-site/menu";
+@import "04-site/footer";
+
+/// === PAGES === ///
+@import "05-pages/about";
+@import "05-pages/home";
+
+/// === COMPONENTS === ///
+@import "06-components/tables";
